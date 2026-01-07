@@ -24,17 +24,17 @@
           "content": {
             "application/json": {
               "schema": {
-                "$ref": "#/components/schemas/Student"
+                "$ref": "#/components/schemas/StudentTb"
               }
             },
             "text/json": {
               "schema": {
-                "$ref": "#/components/schemas/Student"
+                "$ref": "#/components/schemas/StudentTb"
               }
             },
             "application/*+json": {
               "schema": {
-                "$ref": "#/components/schemas/Student"
+                "$ref": "#/components/schemas/StudentTb"
               }
             }
           }
@@ -87,17 +87,17 @@
           "content": {
             "application/json": {
               "schema": {
-                "$ref": "#/components/schemas/Student"
+                "$ref": "#/components/schemas/StudentTb"
               }
             },
             "text/json": {
               "schema": {
-                "$ref": "#/components/schemas/Student"
+                "$ref": "#/components/schemas/StudentTb"
               }
             },
             "application/*+json": {
               "schema": {
-                "$ref": "#/components/schemas/Student"
+                "$ref": "#/components/schemas/StudentTb"
               }
             }
           }
@@ -194,7 +194,7 @@
   },
   "components": {
     "schemas": {
-      "Student": {
+      "StudentTb": {
         "type": "object",
         "properties": {
           "studentPkid": {
@@ -210,8 +210,8 @@
             "nullable": true
           },
           "dateOfBirth": {
-            "type": "integer",
-            "format": "int32",
+            "type": "string",
+            "format": "date-time",
             "nullable": true
           },
           "email": {
